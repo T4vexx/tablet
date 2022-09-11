@@ -1,0 +1,73 @@
+.dashboard_wrap {
+    width: 100%;
+    display: flex;
+    z-index: 20;  
+
+    .dashboard_menu {
+        margin-left: 40px;
+        margin-top: 10px;
+
+        .dashboard_card_car_outbox {
+            margin-top: 50px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        } 
+        
+        .dashboard_toggle {
+            margin-top: 100px;
+
+        }
+
+        .dashboard_localizacao {
+            margin-top: 100px;
+
+            &:hover {
+                svg {
+                    animation: police .4s infinite;
+                }
+            }
+        }
+
+        button {
+            width: 342px;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, rgba(217,217,217,0.30) 0%, rgba(217,217,217,0) 100%);;
+            outline: 0;
+            border: 0;
+            font-size: 30px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            cursor: pointer;
+            transition: transform .5s ease-in-out;
+
+            &:hover {
+                transform: translateX(-20px);
+            }
+        }
+
+        span {
+            margin-left: 15px;
+        }
+    }
+}
+
+@keyframes police {
+    0% {
+        stroke: #3851B4;
+    }
+
+    50% {
+        stroke: #ED6464;
+    }
+
+    100% {
+        stroke: #3851B4;
+    }
+}

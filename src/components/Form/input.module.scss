@@ -1,0 +1,36 @@
+.input_label {
+    display: flex;
+    flex-direction: column;
+    p {
+       font-size: 20px;
+       font-weight: 200;
+    }
+
+    input {
+        width: 95%;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #181B23;
+        outline: 0;
+        border: 0;
+        padding-left: 10px;
+        appearance: none;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 200;
+        color: red;
+    }
+}

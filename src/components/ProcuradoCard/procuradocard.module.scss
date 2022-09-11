@@ -1,0 +1,59 @@
+.dashboard_card_grid {
+    margin-top: 20px;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+
+    .mySwiper {
+        width: 980px;
+        z-index: 99999!important;
+    }
+
+    .dashboard_card_looked {
+        width: 300px;
+        height: 150px;
+        background: #ED6464;
+        border-radius: 8px;
+        display: flex;
+        background-image: url("https://cdn.discordapp.com/attachments/593999593386278912/1009477150442791113/unknown.png");
+        background-repeat: no-repeat;
+        background-size: 300px auto;
+        padding-left: 10px;
+        
+        .dashboard_card_image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+
+        .dashboard_card_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 20px;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+    }
+}

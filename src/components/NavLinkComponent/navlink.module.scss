@@ -1,0 +1,23 @@
+.navlink_wrap {
+    display: flex;
+    align-items: center;
+    z-index: 15;
+
+    div {
+        display: flex;
+        font-size: 22px;
+        font-weight: 600;
+        align-items: center;
+
+        p {
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+    }
+    
+}
+
+.active_link {
+    background: linear-gradient(90deg, rgba(217,217,217,0.30) 0%, rgba(217,217,217,0) 100%);
+    border-radius: 5px;
+}

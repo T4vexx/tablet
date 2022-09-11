@@ -1,0 +1,36 @@
+.ocorrencia_relatorio_wrap {
+    width: 100%;
+    display: flex;
+    z-index: 2;
+
+    .ocorrencias_relatorio_menu {
+        margin-left: 40px;
+        margin-top: 10px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        
+        .text_when_not_detalhar {
+            margin-top: 20px;
+        }
+
+        .ocorrencias_relatorio_itens {
+            width: 980px;
+            height: 720px;
+            padding-left: 20px;
+            background-color: #1F2029;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            margin-top: 50px;
+            overflow: auto;
+
+            h2 {
+                font-size: 26px;
+                font-weight: 200; 
+                margin-top: 10px;
+            }
+        }
+    }
+}

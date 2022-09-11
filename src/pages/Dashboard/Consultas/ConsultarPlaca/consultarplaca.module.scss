@@ -1,0 +1,116 @@
+.dashboard_wrap {
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    
+    .consultar_placa_menu {
+        margin-left: 40px;
+        margin-top: 10px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .search_passport {
+            width: 980px;
+            height: 130px;
+            padding: 0px 20px 0px 20px;
+            background-color: #1F2029;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 50px;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .search_passport_input_button {
+                display: grid;
+                grid-template-columns: auto auto;
+
+                button {
+                    width: 100%;
+                    height: 50px;
+                    background: #3851B4;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    outline: 0;
+                    border: 0;
+                    font-size: 24px;
+
+                    p {
+                        margin-left: 10px;
+                        white-space: nowrap;
+                    }
+
+                    &:disabled {
+                        filter: brightness(0.5);
+                        cursor: default;
+                    }
+                }
+            }
+
+            .search_passport_input_button2 {
+                display: grid;
+                grid-template-columns: auto auto;
+
+                button {
+                    width: 940px;
+                    height: 50px;
+                    background: #3851B4;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    outline: 0;
+                    border: 0;
+                    font-size: 24px;
+
+                    p {
+                        margin-left: 10px;
+                        white-space: nowrap;
+                    }
+
+                    &:disabled {
+                        filter: brightness(0.5);
+                        cursor: default;
+                    }
+
+                    &:hover {
+                        transform: scale(1.02) !important;
+                    }
+                }
+            }
+        }
+
+        .consultar_placa_card {
+            width: 980px;
+            height: 280px;
+            padding: 0px 20px 0px 20px;
+            background-color: #1F2029;
+            border-radius: 8px;
+            margin-top: 50px; 
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 50% 50%;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                width: 200px;
+                height: 200px;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,149 @@
+.dashboard_wrap {
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    
+    .consultar_placa_menu {
+        margin-left: 40px;
+        margin-top: 10px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .consultas_cidadaos_online {
+            width: 980px;
+            height: 650px;
+            padding: 0px 20px 0px 20px;
+            background-color: #1F2029;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+
+            .consultas_cidadaos_online_header {
+                width: 100%;
+                height: 8%;
+                display: flex;
+                justify-content: space-between;
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    p {
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+            .consultas_cidadaos_online_body {
+                width: 100%;
+                height: 90%;
+                overflow: auto;
+                
+                .cidadao_online:not(:first-child) {
+                    margin-top: 20px;
+                }
+
+                .cidadao_online {
+                    width: 100%;
+                    height: 50px;
+                    background: #D9D9D9;
+                    border-radius: 8px;
+                    padding: 0 10px;
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: 50% auto auto;
+
+                    h2 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+
+                    h2:last-child {
+                        text-align: right;
+                    }
+                }
+                
+                .filtrar_online {
+                    width: 500px;
+                    height: 110px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 20px;
+                    background-color: #1F2029;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 8px;
+                } 
+                .consultas_cidadaos_online_footer {
+                    width: 980px;
+                    height: 150px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                    .filtrar_online {
+                        width: 500px;
+                        height: 110px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 20px;
+                        background-color: #1F2029;
+                        border: 1px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 8px;
+                    }
+        
+                    .filtrar_online_icon {
+                        width: 150px;
+                        height: 100px; 
+                        font-size: 80px;
+                        display: flex;
+                        align-items: center;
+        
+                        svg {
+                            cursor: pointer;
+                            transition: transform .7s ease-in-out;
+        
+                            &:hover {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .consultas_cidadaos_online_footer {
+            width: 980px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .filtrar_online {
+                width: 500px;
+                height: 110px;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                background-color: #1F2029;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 8px;
+            }
+
+            .filtrar_online_icon {
+                width: 150px;
+                height: 100px; 
+                font-size: 80px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+

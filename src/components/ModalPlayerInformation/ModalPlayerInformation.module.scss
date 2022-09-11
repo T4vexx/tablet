@@ -1,0 +1,105 @@
+.modal_wrap {
+    position: absolute;
+    width: 1340px;
+    height: 890px;
+    background-color: rgba(24, 27, 35, 0.8);
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 8px;
+
+    .modal_player_information {
+        width: 800px;
+        height: 700px;
+        background-color: #1F2029;
+        border-radius: 8px;
+        border: 2px solid #FFFFFF;
+
+        .modal_player_information_header {
+            width: 100%;
+            height: 12%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+
+            h2 {
+                font-size: 32px;
+                font-weight: 500;
+                margin-right: 30px;
+            } 
+
+            svg {
+                cursor: pointer;
+                transition: transform 0.2s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .divider_information {
+            width: 90%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.58);
+            border-radius: 12px;
+            margin: auto;
+        }
+
+        .modal_player_information_body {
+            width: 100%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto auto;
+            justify-items: center;
+            align-items: center;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 400;
+                display: flex;
+
+                p {
+                    font-weight: 500;
+                    margin-left: 20px;  
+                }
+            }
+        }
+
+        .modal_player_information_footer {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            button {
+                width: 250px;
+                height: 50px;
+                border-radius: 8px;
+                background: #3851B4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: 0;
+                border: 0;
+                font-size: 24px;
+            }
+
+            img {
+                width: 220px;
+                height: 220px;
+                margin-top: -30px;
+            }
+        }
+    }
+}

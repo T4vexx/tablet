@@ -1,0 +1,90 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.7",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@use-it/event-listener": "^0.1.7",
+    "bcryptjs": "^2.4.3",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^6.7.1",
+    "fivem-nui-react-lib": "^2.2.8",
+    "image-webpack-loader": "^8.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.34.2",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "6",
+    "react-scripts": "5.0.1",
+    "recoil": "^0.7.5",
+    "stream-browserify": "^3.0.0",
+    "style-loader": "^3.3.1",
+    "swiper": "^8.3.2",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/enzyme": "^3.10.7",
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.7.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "cra-build-watch": "^3.2.0",
+    "cross-env": "^7.0.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ifdef-loader": "^2.1.5",
+    "react-test-renderer": "^18.2.0",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "svg-url-loader": "^7.1.1",
+    "terser-webpack-plugin": "^5.3.4",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch": "cra-build-watch --disable-chunks --build-path ../resources/html --output-filename dev.js",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
+    "build": "react-scripts build",
+    "build:resources": "cross-env NODE_ENV=production webpack --config webpack/webpack.resources.js --color --progress",
+    "test": "react-scripts test --watchAll=false --testMatch **/src/**/*.test.[jt]s?(x)",
+    "test:watch": "react-scripts test --watchAll --testMatch **/src/**/*.test.[jt]s?(x)",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

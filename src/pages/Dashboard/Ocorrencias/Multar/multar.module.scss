@@ -1,0 +1,55 @@
+.ocorrencia_multar_wrap {
+    width: 100%;
+    display: flex;
+    z-index: 2;
+
+    .ocorrencias_multar_menu {
+        margin-left: 40px;
+        margin-top: 10px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        } 
+
+        .search_passport {
+            width: 980px;
+            height: 130px;
+            padding: 0px 20px 0px 20px;
+            background-color: #1F2029;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 50px;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .search_passport_input_button {
+                display: grid;
+                grid-template-columns: auto auto;
+
+                button {
+                    width: 100%;
+                    height: 50px;
+                    background: #3851B4;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    outline: 0;
+                    border: 0;
+                    font-size: 24px;
+
+                    p {
+                        margin-left: 10px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

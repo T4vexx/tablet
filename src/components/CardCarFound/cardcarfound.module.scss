@@ -1,0 +1,47 @@
+.card_car_found {
+    width: 980px;
+    height: 350px;
+    padding-left: 20px;
+    background-color: #1F2029;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .card_car_found_texts {
+        width: 640px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto; 
+        padding-top: 20px;
+
+        button {
+            width: 285px;
+            height: 50px;
+            background: #3851B4;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: 0;
+            border: 0;
+            font-size: 24px;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            margin: auto 0 auto 0 !important;
+            z-index: 5;
+            p {
+                margin-left: 10px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
